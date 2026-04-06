@@ -1,0 +1,63 @@
+/* ══════════════════════════════════════════
+   RESPONSIVE — Auto (No Manual Toggle)
+   Desktop = sidebar layout
+   Mobile  = bottom nav layout
+   ══════════════════════════════════════════ */
+
+/* Desktop large — 5 col stats */
+@media(min-width:1200px) { .sgr{grid-template-columns:repeat(5,1fr)} }
+@media(max-width:1200px) { .sgr{grid-template-columns:repeat(3,1fr)} }
+@media(max-width:980px)  { .sgr{grid-template-columns:repeat(2,1fr)} .cg2{grid-template-columns:1fr} }
+
+/* Desktop — keep legacies working */
+@media(min-width:769px) {
+  .hmb { display: none !important; }
+  .bnav { display: none !important; }
+  .main { margin-left: var(--sw); }
+  #mbb { display: none !important; }
+}
+
+/* Mobile breakpoint */
+@media(max-width:768px) {
+  /* Sidebar hidden by default, shown on toggle */
+  .sb { transform: translateX(-100%); }
+  .sb.on { transform: translateX(0); box-shadow: var(--shl); }
+
+  #mbb { position: fixed; inset: 0; z-index: 199; background: rgba(0,0,0,.38); display: none; }
+  #mbb.on { display: block; }
+
+  .main { margin-left: 0 !important; max-width: 100vw !important; overflow: hidden !important; }
+  .topb { padding: 0 12px; }
+  .pa { padding: 12px; }
+
+  /* Show hamburger & bottom nav */
+  .hmb { display: flex !important; }
+  .bnav { display: flex !important; }
+
+  /* Grid adjustments */
+  .sgr { grid-template-columns: repeat(2,1fr) !important; }
+  .cg2 { grid-template-columns: 1fr; }
+  .frow { grid-template-columns: 1fr; }
+  .frow3 { grid-template-columns: 1fr; }
+  .ag-grid { grid-template-columns: 1fr 1fr; }
+  .fgrd { grid-template-columns: repeat(3,1fr); }
+
+  /* Table → card mode */
+  .dtbl { display: none !important; }
+  .mcard-list { display: block !important; }
+
+  /* Other adjustments */
+  #clk { display: none !important; }
+  #tco { bottom: 72px; }
+  .sb-ptk-section { display: none !important; }
+  .peta-container { height: calc(100vh - 56px - var(--bnav-h)); }
+  .peta-legend { font-size: .6rem; }
+}
+
+@media(max-width:480px) {
+  .sgr { grid-template-columns: 1fr 1fr !important; }
+  .lcard { padding: 28px 18px 24px; }
+  .frow { grid-template-columns: 1fr; }
+  .frow3 { grid-template-columns: 1fr; }
+  .ag-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,40 @@
+:root{
+  /* Lush Navy Palette */
+  --navy:#081428;--navy2:#0a1a35;--navy3:#0d2246;
+  
+  /* Vibrant Accents */
+  --blue:#1e6fd9;--blue2:#3b82f6;--blueh:#1660c5;--bluelo:rgba(30,111,217,.12);
+  --gold:#c9950f;--gold2:#f59e0b;--gold-glow:0 0 15px rgba(201,149,15,.3);
+  
+  /* Semantic Status Colors */
+  --green:#10b981;--greenl:#ecfdf5;--green-glow:0 0 12px rgba(16,185,129,.2);
+  --red:#ef4444;--redl:#fef2f2;--red-glow:0 0 12px rgba(239,68,68,.2);
+  --amber:#f59e0b;--amberl:#fffbeb;
+  --purple:#8b5cf6;--purplel:#f5f3ff;
+  --teal:#14b8a6;--teall:#f0fdfa;
+  
+  /* Backgrounds & Text */
+  --bg:#f1f5f9;--card:#ffffff;--text:#0f172a;--mid:#475569;--muted:#94a3b8;
+  --border:#e2e8f0;--bdark:#cbd5e1;
+  
+  /* Glassmorphism & Effects */
+  --glass-bg:rgba(255,255,255,.72);
+  --glass-border:rgba(255,255,255,.45);
+  --glass-sh:0 8px 32px rgba(31,38,135,.07);
+  
+  /* Premium Shadows */
+  --sh0:0 1px 4px rgba(8,18,36,.04);
+  --sh:0 10px 25px -5px rgba(8,18,36,.1), 0 8px 10px -6px rgba(8,18,36,.1);
+  --shl:0 20px 50px -12px rgba(8,18,36,.25);
+  --sh-inner:inset 0 1px 0 rgba(255,255,255,0.8);
+  
+  /* Layout Spacing & Spacing */
+  --r:14px;--sw:280px;--bnav-h:64px;
+  --font:'Plus Jakarta Sans',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  
+  /* Sidebar Specifics */
+  --sb-bg:linear-gradient(175deg,#0a1a35 0%,#081428 55%,#060c1a 100%);
+  --sb-accent:rgba(30,111,217,.22);
+  --sb-line:rgba(255,255,255,.05);
+}
